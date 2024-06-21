@@ -2,32 +2,408 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
+@layer base {
   :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+
+    --primary: 222.2 47.4% 11.2%;
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 222.2 84% 4.9%;
+
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 212.7 26.8% 83.9%;
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+.st1 {
+  display: inline;
+  fill: none;
+}
+
+/*.st2{display:inline;fill:none;stroke:#ED1C24;stroke-width:6;stroke-miterlimit:10;}*/
+
+.st3 {
+  display: inline;
+  fill-rule: evenodd;
+  clip-rule: evenodd;
+  fill: none;
+}
+
+.st4 {
+  display: inline;
+  fill: none;
+  stroke: #000000;
+  stroke-width: 6;
+  stroke-miterlimit: 10;
+}
+
+.st5 {
+  display: inline;
+}
+
+.st6 {
+  display: inline;
+  fill: none;
+  stroke: #000000;
+  stroke-width: 2;
+}
+
+.st7 {
+  display: inline;
+  fill: none;
+  stroke: #000000;
+  stroke-width: 2;
+  stroke-miterlimit: 10;
+}
+
+.st8 {
+  fill: none;
+  stroke: #000000;
+  stroke-width: 2;
+}
+
+.st9 {
+  display: inline;
+  fill: none;
+  stroke: #000000;
+  stroke-miterlimit: 10;
+}
+
+.st10 {
+  display: inline;
+  fill: none;
+  stroke: #000000;
+  stroke-width: 0.1;
+  stroke-miterlimit: 10;
+}
+
+.st11 {
+  display: inline;
+  fill: none;
+  stroke: #000000;
+  stroke-width: 10;
+  stroke-miterlimit: 10;
+}
+
+.st12 {
+  fill: none;
+  stroke: #000000;
+  stroke-width: 2;
+  stroke-miterlimit: 10;
+}
+
+.st13 {
+  fill: none;
+  stroke: #000000;
+  stroke-width: 6;
+  stroke-miterlimit: 10;
+}
+
+.st14 {
+  fill: none;
+  stroke: #000000;
+  stroke-miterlimit: 10;
+}
+
+.st15 {
+  fill: none;
+}
+
+.st16 {
+  display: inline;
+  fill: #FFFFFF;
+  stroke: #000000;
+  stroke-width: 6;
+  stroke-miterlimit: 10;
+}
+
+.st17 {
+  clip-path: url(#SVGID_4_);
+  fill: none;
+  stroke: #000000;
+  stroke-width: 2;
+}
+
+.st18 {
+  fill: #FFCF84 !important;
+}
+
+.st19 {
+  fill: #EDB665 !important;
+}
+
+.st20 {
+  fill: #C3956D !important;
+}
+
+.st21 {
+  fill: #B28560 !important;
+}
+
+.st22 {
+  fill: #EFB776 !important;
+}
+
+.st23 {
+  fill: #E1A74E !important;
+}
+
+.st24 {
+  fill: #E1A858 !important;
+}
+
+.st25 {
+  fill: #D49A30 !important;
+}
+
+.st26 {
+  fill: #A17653 !important;
+}
+
+.st27 {
+  fill: #D3903E !important;
+}
+
+.st28 {
+  fill: #CB882A !important;
+}
+
+.st29 {
+  fill: #9B683A !important;
+}
+
+.st30 {
+  fill-rule: evenodd;
+  clip-rule: evenodd;
+  fill: none;
+  stroke: #CB882A !important;
+  stroke-width: 5;
+  stroke-miterlimit: 10;
+}
+
+ .banner11 {
+  background-image: url("https://cdn.pixabay.com/photo/2017/01/20/00/30/maldives-1993704_640.jpg") !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+}
+
+.st31 {
+  fill-rule: evenodd;
+  clip-rule: evenodd;
+  fill: none;
+  stroke: #D49A30 !important;
+  stroke-width: 5;
+  stroke-miterlimit: 10;
+}
+
+.st32 {
+  fill-rule: evenodd;
+  clip-rule: evenodd;
+  fill: none;
+  stroke: #E1A74E !important;
+  stroke-width: 5;
+  stroke-miterlimit: 10;
+}
+
+.st33 {
+  fill-rule: evenodd;
+  clip-rule: evenodd;
+  fill: none;
+  stroke: #FFCF84 !important;
+  stroke-width: 5;
+  stroke-miterlimit: 10;
+}
+
+.st34 {
+  fill-rule: evenodd;
+  clip-rule: evenodd;
+  fill: none;
+  stroke: #9B683A !important;
+  stroke-width: 5;
+  stroke-miterlimit: 10;
+}
+
+.st35 {
+  fill-rule: evenodd;
+  clip-rule: evenodd;
+  fill: #EDB665 !important;
+}
+
+.st36 {
+  fill-rule: evenodd;
+  clip-rule: evenodd;
+  fill: #CB882A !important;
+}
+
+.st37 {
+  fill-rule: evenodd;
+  clip-rule: evenodd;
+  fill: #D49A30 !important;
+}
+
+.st38 {
+  fill-rule: evenodd;
+  clip-rule: evenodd;
+  fill: #E1A74E !important;
+}
+
+.st39 {
+  fill-rule: evenodd;
+  clip-rule: evenodd;
+  fill: #FFCF84 !important;
+}
+
+.st40 {
+  fill-rule: evenodd;
+  clip-rule: evenodd;
+  fill: #9B683A !important;
+}
+
+.st41 {
+  fill-rule: evenodd;
+  clip-rule: evenodd;
+  fill: #FFFFFF;
+}
+
+.st42 {
+  fill-rule: evenodd;
+  clip-rule: evenodd;
+  fill: #FFFFFF;
+  stroke: #FFFFFF;
+  stroke-miterlimit: 10;
+}
+
+.st43 {
+  fill-rule: evenodd;
+  clip-rule: evenodd;
+}
+
+.st44 {
+  fill-rule: evenodd;
+  clip-rule: evenodd;
+  stroke: #FFFFFF;
+  stroke-miterlimit: 10;
+}
+
+.st45 {
+  fill-rule: evenodd;
+  clip-rule: evenodd;
+  fill: #ED1C24;
+  stroke: #000000;
+  stroke-miterlimit: 10;
+}
+
+a.svg-link {
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  position: relative;
+}
+
+.st13,
+.st14 {
+  fill: #f7f7f7 !important;
+}
+
+a.svg-link:hover {
+  stroke: #E1A74E !important;
+}
+
+a.svg-link:hover .st13,
+a.svg-link:hover polygon,
+a.svg-link:hover .st12,
+a.svg-link:hover .st14 {
+  stroke: #E1A74E !important;
+  /* Ensure --primary is defined or fallback to 'yellow' */
+  stroke-width: 15px;
+  /* Adjust stroke width as needed */
+}
+
+a.svg-link:hover path {
+  stroke-width: px;
+  stroke: #E1A74E !important;
+}
+
+a path {
+  stroke-dasharray: 5000;
+  stroke-dashoffset: 5000;
+  animation: dash 4s linear forwards;
+}
+
+/* the animation */
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: 0;
   }
+}
+
+svg {
+  max-width: 100%;
+  height: auto;
+  box-sizing: border-box;
+  overflow: 'visible';
+  /* vertical-align: middle; */
 }
