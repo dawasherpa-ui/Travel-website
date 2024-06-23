@@ -8,7 +8,8 @@ function AboutCard() {
     <div>
       <div className="column-1 sm:columns-2 md:columns-3 gap-3">
         {data.map((el: any, i: number) => (
-          <div className="border border-opacity-10 hover:border-opacity-20 rounded-xl w-full h-56 cursor-pointer mb-3 ">
+          <div className="border border-opacity-10 hover:border-opacity-20 rounded-xl w-full h-56 cursor-pointer mb-3 "
+          key={i}>
             <div className="w-full h-full">
               <div className="relative group w-full h-full flex items-end">
                 <div className="absolute w-full h-full ">

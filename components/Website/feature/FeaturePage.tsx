@@ -1,4 +1,4 @@
-export default () => {
+export default function FeaturePage() {
   return (
     <section
       className="h-[30rem] grid place-items-center bg-cover bg-center text-white"
@@ -17,14 +17,14 @@ export default () => {
         </div>
         <div className="flex gap-3 items-center mt-4 md:justify-center">
           <a
-            href="javascript:void(0)"
-            className="inline-block py-2 px-4 text-white font-medium bg-gray-800 bg-opacity-70 duration-150 hover:bg-gray-700 active:bg-gray-900 rounded-lg shadow-md hover:shadow-none"
+            href="/contact"
+            className="inline-block py-2 px-4 text-white font-medium bg-gray-800 bg-opacity-70 duration-150 hover:bg-gray-700 active:bg-gray-900 rounded-lg shadow-md hover:shadow-none text-xs md:text-lg"
           >
             Get started
           </a>
           <a
-            href="javascript:void(0)"
-            className="inline-block py-2 px-4 text-gray-800 bg-white bg-opacity-30 font-medium duration-150 border hover:bg-gray-50 active:bg-gray-100 rounded-lg"
+            href="/contact"
+            className="inline-block py-2 px-4 text-gray-800 bg-white bg-opacity-30 font-medium duration-150 border hover:bg-gray-50 active:bg-gray-100 rounded-lg text-xs md:text-lg"
           >
             Learn more
           </a>
@@ -32,4 +32,4 @@ export default () => {
       </div>
     </section>
   );
-};
+}

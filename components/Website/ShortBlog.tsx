@@ -39,7 +39,7 @@ function ShortBlog() {
           and to see the closest view of the world’s highest mountain in the
           world Mt. Everest. The unique combination of outdoor adventure, vast
           glaciers, local culture, and beautiful villages along the trekking
-          trails makes this one of Nepal's most popular trekking areas. This
+          trails makes this one of Nepal&apos;s most popular trekking areas. This
           region can be considered a trekker’s paradise as it offers many
           trekking routes.
         </p>

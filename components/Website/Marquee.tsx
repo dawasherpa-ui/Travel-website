@@ -5,7 +5,7 @@ const reviews = [
   {
     name: "Nurbu",
     username: "@Nurbu",
-    body: "I've never seen anything like this before. It's amazing. I love it.",
+    body: "I've never seen anything like this before. It&apos;s amazing. I love it.",
     img: "https://avatar.vercel.sh/Nurbu",
   },
   {

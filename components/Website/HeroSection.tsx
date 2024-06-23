@@ -28,7 +28,7 @@ export default function HeroCarousel() {
         {lists.map((item, index) => (
           <CarouselItem
             key={index}
-            className={`flex items-center  h-screen bg-center bg-cover `}
+            className={`flex items-center  h-screen bg-center bg-cover bg-blend-multiply bg-gray-400 bg-opacity-60 `}
             style={{backgroundImage: `url("${item.image}")`}}
          >
             <div className="  space-y-2 md:space-y-4 px-14">
@@ -87,7 +87,7 @@ const lists = [
   },
 
   {
-    title: "Experience Nature's Best",
+    title: "Experience Nature&apos;s Best",
     h1: "Nature Beckons",
     image:"/blog/campNice.jpg",
     h2: "Explore Beyond Limits",

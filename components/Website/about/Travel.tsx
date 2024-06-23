@@ -65,7 +65,22 @@ function TravelPlan() {
       color: "#8B8B8B", // Darkest Grey
     },
   ];
+  const data = [
+    { title: "Day1", value: "Road to KTM" },
+    { title: "Day2", value: "Rest day" },
+    { title: "Day3", value: "Travel KTM" },
+    { title: "Day4", value: "Preparation" },
+    { title: "Day5", value: "Flight to camp1" },
+    { title: "Day6", value: "Road to Camp2" },
+    { title: "Day7", value: "Road to Camp3" },
+    { title: "Day8", value: "Road to Camp4" },
+    { title: "Day9", value: "Road to Camp5" },
+    { title: "Day10", value: "Road to Camp6" },
+    { title: "Day11", value: "Summit of Mount" },
+    { title: "Day12", value: "Return to camp" },
+    { title: "Day13", value: "Return to camp" },
 
+  ];
   return (
     <div>
       <div
@@ -78,16 +93,19 @@ function TravelPlan() {
           Travel Plans
         </h2>
         <div className="flex  justify-center flex-wrap gap-4  px-20   ">
-          {servicesData?.map((item, id: any) => {
+          {data?.map((item, id: any) => {
             const colorIndex = id % servicesData.length;
             return (
               <div
                 // style={{ backgroundColor: `black` }}
                 id={id}
+                key={id}
                 className={`service p-4 w-[320px]  bg-black bg-opacity-20  h-[130px] hover:bg-opacity-40  text-center flex flex-col justify-center items-center  rounded-3xl`}
               >
-                <p className="font-bold mb-1 flex gap-1">Time <History size={16}/></p>
-                <p className=" text-xs font-medium">32Days</p>
+                <p className="font-bold mb-1 flex gap-1">
+                  {item.title} <History size={16} />
+                </p>
+                <p className=" text-xs font-medium">{item.value}</p>
               </div>
             );
           })}

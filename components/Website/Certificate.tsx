@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-export default () => {
+export default function Certificate() {
   return (
     <div className="py-14">
       <div className="max-w-screen-xl mx-auto px-4 md:px-8">
@@ -10,7 +10,7 @@ export default () => {
         <div className="mt-6">
           <ul className="flex gap-y-6 flex-wrap items-center justify-center [&>*]:px-12 lg:divide-x">
             {/* LOGO 1 */}
-            {[1,2,3,4].map((el)=><li className="flex-none">
+            {[1,2,3,4].map((el,i)=><li key={i} className="flex-none">
               <Image
                 src="/certificates1.jpg"
                 alt="Certificate"

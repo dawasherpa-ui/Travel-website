@@ -13,7 +13,7 @@ import React from "react";
 export default function Page() {
   return (
     <div>
-      <Banner  title={"About"} description="Trekking Agencies' Association of Nepal (TAAN) is an umbrella association of trekking agencies in the country. It was established in 1979 by a handful of trekking agency operators who felt it was time to devise sound business principles as well as regulate the sector which was growing by leaps and bounds with every passing year. They also felt the need of a strong lobby group that could suggest to the government on several issues to promote the Nepali tourism industry and develop tourism as a revenue generating industry."/>
+      <Banner  title={"About"} description="Trekking Agencies' Association of Nepal (TAAN) is an umbrella association of trekking agencies in the country. It was established in 1979 by a handful of trekking agency operators who felt it was time to devise sound business principles as well as regulate the sector which was growing by leaps and bounds with every passing year."/>
       <div className="w-full md:w-[70%] m-auto py-4">
         <About />
         <Chairman />

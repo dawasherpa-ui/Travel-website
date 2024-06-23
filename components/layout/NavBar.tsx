@@ -45,8 +45,14 @@ export default function Navbar() {
     { id: 1, name: "Round Tour" },
     { id: 1, name: "Rafting & Paragliding" },
   ];
+  // const pathname=usePathname()
+  // console.log(pathname)
   return (
-    <div className="bg-transparent text-white">
+    <div
+      className={`${
+        pathname !== "/contact" ? "bg-transparent" : "bg-black"
+      } text-white`}
+    >
       <div className=" flex items-center justify-start py-4  px-4">
         <Link href={"/"} className="w-52 h-42 flex items-center mr-3">
           <Image
@@ -124,7 +130,7 @@ export default function Navbar() {
             <div className=" py-2 rounded-full bg-white px-3 bg-opacity-0 hover:bg-opacity-30 trasation-opacity ease-in-out duration-300 ">
               <div className="group relative cursor-pointer">
                 <div className="flex items-center justify-between">
-                  <a>Others</a>
+                  <a href="/others">Others</a>
                   <span>
                     <ChevronDown size={18} />
                   </span>
@@ -133,6 +139,7 @@ export default function Navbar() {
                 <div className="absolute z-50  flex w-52 flex-col bg-background rounded-xl space-y-4 py-4 text-primary shadow-xl opacity-0 pointer-events-none transition-opacity duration-300 group-hover:opacity-100 group-hover:pointer-events-auto">
                   {brands?.map((brand: any) => (
                     <a
+                    href="/others"
                       key={brand.id}
                       className="hover:text-slate-800 hover:translate-x-2 duration-300 mx-2"
                     >
@@ -168,12 +175,7 @@ export default function Navbar() {
               direction="right"
               className=" "
             >
-              <div className="  bg-background space-y-4 p-4 border-none flex flex-col h-screen">
-                <NavDropLists
-                  categories={categories}
-                  brands={brands}
-                  frames={frames}
-                />
+              <div className="  bg-black space-y-4 p-4 border-none flex flex-col h-screen">
                 {navlinks.map((item: any, idx) => {
                   return (
                     <Link
@@ -189,8 +191,12 @@ export default function Navbar() {
                     </Link>
                   );
                 })}
-
-                <div className="flex flex-col-reverse space-x-0 lg:space-x-6 lg:flex-row">
+                <NavDropLists
+                  categories={categories}
+                  brands={brands}
+                  frames={frames}
+                />
+                {/* <div className="flex flex-col-reverse space-x-0 lg:space-x-6 lg:flex-row">
                   <Link
                     href="mailto:byteiosolution@gmail.com"
                     className="mail_button flex items-center py-2 px-4 text-center text-primary hover:text-slate-800-500 bg-white hover:bg-background  rounded-md shadow transition-all ease-in-out  "
@@ -200,7 +206,7 @@ export default function Navbar() {
                     </div>
                     <span className=" text-sm"> Get in touch</span>
                   </Link>
-                </div>
+                </div> */}
               </div>
             </Drawer>
           </div>
@@ -270,11 +276,11 @@ function NavDropLists({ categories, brands, frames }: any) {
     <div className=" flex flex-col md:flex-row md:items-center gap-6 ">
       <Accordion type="single" collapsible className="w-full">
         <AccordionItem className=" border-b-0" value="item-1">
-          <AccordionTrigger>CATEGORIES</AccordionTrigger>
+          <AccordionTrigger>Expedition</AccordionTrigger>
           <AccordionContent className=" flex flex-col gap-4">
             {categories?.map((category: any) => (
               <a
-                href="/category"
+                href="/expedition"
                 key={category.id}
                 className="hover:translate-x-2 duration-300 mx-2 "
               >
@@ -285,10 +291,11 @@ function NavDropLists({ categories, brands, frames }: any) {
         </AccordionItem>
 
         <AccordionItem className=" border-b-0" value="item-2">
-          <AccordionTrigger>FRAMES</AccordionTrigger>
+          <AccordionTrigger>Trekking</AccordionTrigger>
           <AccordionContent className=" flex flex-col gap-4">
             {frames?.map((frame: any) => (
               <a
+                href="/trekking"
                 key={frame.id}
                 className="  hover:translate-x-2 duration-300 mx-2"
               >
@@ -299,12 +306,13 @@ function NavDropLists({ categories, brands, frames }: any) {
         </AccordionItem>
 
         <AccordionItem className=" border-b-0" value="item-3">
-          <AccordionTrigger>BRANDS</AccordionTrigger>
+          <AccordionTrigger>Others</AccordionTrigger>
           <AccordionContent className=" flex flex-col gap-4">
             {brands?.map((brand: any) => (
               <a
+              href="/others"
                 key={brand.id}
-                className="  hover:translate-x-2 duration-300 mx-2"
+                className="  hover:translate-x-2 duration-300 mx-2 cursor-pointer"
               >
                 {brand.name}
               </a>

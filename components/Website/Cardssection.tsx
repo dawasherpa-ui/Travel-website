@@ -47,7 +47,7 @@ export default function CarouselItemCarousel({ title1, title2 }: any) {
       title:"Mt.Choyu",
       desc:"One of the famous 8k Mountain.",
       image:
-        "/award/Chogiri.jpg",
+        "/award/Chogori.jpg",
     },
   ];
 

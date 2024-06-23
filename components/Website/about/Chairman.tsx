@@ -13,8 +13,10 @@ function Chairman() {
           className="object-cover h-full w-full"
         />
       </div>
-      <h1 className="text-2xl mb-2">Director's Message</h1>
-      <p>
+      <h1 className=" mb-2 px-4 text-xl md:px-0 md:text-2xl">
+        Director&apos;s Message
+      </h1>
+      <p className="px-4 text-xs md:px-0 md:text-lg">
         We started epeak with a dream to make Nepal a global tourism and
         adventure spot that goes beyound our famous peaks. We want to introduce
         and share the vast depth of Nepali Culture. For this dream we have
@@ -30,7 +32,7 @@ function Chairman() {
         future.
       </p>
       <br />
-      <p>
+      <p className="px-4 text-xs md:px-0 md:text-lg">
         I understand your trust is precious. As Chairperson, I assure you of
         complete transparency and unwavering commitment to ethical practices.
         You deserve a reliable partner, and we strive to be just that : your

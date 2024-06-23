@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-export default () => {
+export default function BrandDisplay() {
   return (
     <div className="py-14">
       <div className="max-w-screen-xl mx-auto px-4 md:px-8">
