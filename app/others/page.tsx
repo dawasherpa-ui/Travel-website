@@ -9,7 +9,7 @@ function Page() {
     <div>
       <FeaturePage />
       <div className="w-full md:w-[80%] m-auto py-10 mt-20">
-        <h2 className="text-2xl font-semibold">Available Expeditions</h2>
+        <h2 className="text-2xl font-semibold">Available Activities</h2>
         <Expediton />
         {/* <CarouselItemCarousel/> */}
       </div>

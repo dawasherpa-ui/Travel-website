@@ -16,6 +16,7 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import Image from "next/image";
+import { Icon } from "@iconify/react/dist/iconify.js";
 
 export default function Navbar() {
   const pathname = usePathname();
@@ -156,9 +157,9 @@ export default function Navbar() {
             href={"/"}
             className={`${
               pathname === "/" ? " underline " : ""
-            } py-2 rounded-full bg-white px-3 bg-opacity-0 hover:bg-opacity-30 trasation-opacity ease-in-out duration-300`}
+            } py-2 rounded-full flex bg-white px-3 bg-opacity-0 hover:bg-opacity-30 trasation-opacity ease-in-out duration-300`}
           >
-            Help Center
+            WhatsApp<Icon icon="ic:baseline-whatsapp" className="text-2xl"/>
           </Link>
         </div>
         <div className=" block md:hidden">

@@ -7,7 +7,7 @@ import Footer from "@/components/layout/Footer";
 const inter = Montserrat({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Tourio |Travel",
+  title: "Tourio | Travel",
   description: "Tourio the best travel website",
 };
 

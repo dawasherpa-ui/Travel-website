@@ -3,7 +3,7 @@ import React from "react";
 function About({ title }: any) {
   return (
     <div className="my-4">
-      <h1 className="text-4xl px-2 md:px-0 mb-2">{title || "Company"}</h1>
+      <h1 className="text-4xl px-2 md:px-0 mb-2">{title || "Tourio Company"}</h1>
       <p className="px-4 text-xs md:px-0 md:text-sm">
         Ever felt the Himalayas whisper your name? At Epeak we talk back. We&apos;re
         not your typical tour guides we are storytellers of the mountains,

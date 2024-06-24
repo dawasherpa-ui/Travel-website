@@ -70,7 +70,7 @@ export default function Faq() {
   const faqsList = [
     {
       q: "What are some random questions to ask?",
-      a: "That&apos;s exactly the reason we created this random question generator. There are hundreds of random questions to choose from so you're able to find the perfect random question.",
+      a: "That's exactly the reason we created this random question generator. There are hundreds of random questions to choose from so you're able to find the perfect random question.",
     },
     {
       q: "Do you include common questions?",

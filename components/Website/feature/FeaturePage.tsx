@@ -1,7 +1,7 @@
 export default function FeaturePage() {
   return (
     <section
-      className="h-[30rem] grid place-items-center bg-cover bg-center text-white"
+      className="h-[30rem] grid place-items-center bg-cover bg-center text-white bg-blend-multiply bg-gray-400 bg-opacity-60 "
       style={{ backgroundImage: "url('/blog/view2.jpg')" }}
     >
       <div className="max-w-screen-xl mx-auto px-4 md:text-center md:px-8">
@@ -10,9 +10,7 @@ export default function FeaturePage() {
             Adventure Awaits Pack Your Dreams.
           </h3>
           <p className="mt-3 ">
-            Duis aute irure dolor in reprehenderit in voluptate velit esse
-            cillum dolore eu fugiat nulla pariatur excepteur sint occaecat
-            cupidatat non proident.
+          Immerse yourself in the beauty of the great outdoors with our expertly curated trekking adventures. Whether you are a seasoned trekker or a beginner looking to explore the world on foot, we have the perfect trail for you.
           </p>
         </div>
         <div className="flex gap-3 items-center mt-4 md:justify-center">

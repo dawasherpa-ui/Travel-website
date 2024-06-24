@@ -3,10 +3,21 @@ import React from "react";
 
 function TeamCard() {
   const data = [1, 2, 3, 4, 5, 6, 7, 1, 1];
+  const team = [
+    { name: "Tenzing Sherpa", position: "CEO",image:"" },
+    { name: "Sonam Lama", position: "CTO",image:"" },
+    { name: "Chhiring Sherpa", position: "COO",image:"" },
+    { name: "Chhiring Sherpa", position: "UFO",image:"" },
+    { name: "Babu Lama", position: "UFC",image:"" },
+    { name: "Dawa Sherpa", position: "WWE",image:"" },
+    { name: "Dorje Sherpa", position: "IPL",image:"" },
+    { name: "Lakpa Sherpa", position: "FFC",image:"" },
+    { name: "Pasang Sherpa", position: "INC",image:"" },
+  ];
   return (
     <div>
       <div className="  grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-2">
-        {data.map((el: any, i: number) => (
+        {team.map((el: any, i: number) => (
           <Link
             href={`/`}
             key={i}
@@ -21,14 +32,14 @@ function TeamCard() {
                 />
               </div>
               <div className="w-full relative z-20  flex flex-col gap-1 items-center">
-                <div className="text-zinc-950 font-medium">Dawa Sherpa</div>
+                <div className="text-zinc-950 font-medium">{el.name}</div>
                 {/* desc  */}
                 {/* <div className="text-zinc-700 text-sm  para text-[15px]">
                   CEO
                 </div> */}
                 <div className="w-full flex font-medium  text-[13px] justify-center ">
                   {/* DATE  */}
-                  <div className="text-zinc-600  ">Director</div>
+                  <div className="text-zinc-600  ">{el.position}</div>
 
                   {/* CATEGORY  */}
                   {/* <span className="text-zinc-700">#Treeking</span> */}

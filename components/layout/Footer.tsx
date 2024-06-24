@@ -52,7 +52,7 @@ function Footer() {
               </li>
               <li>
                 <a
-                  href="/trekking"
+                  href="/others"
                   className="text-lg font-normal text-gray-100 transition-all duration-300 hover:text-indigo-600 focus-within:text-indigo-600 focus-within:outline-0"
                 >
                   Others

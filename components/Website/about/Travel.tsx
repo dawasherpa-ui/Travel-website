@@ -100,12 +100,12 @@ function TravelPlan() {
                 // style={{ backgroundColor: `black` }}
                 id={id}
                 key={id}
-                className={`service p-4 w-[320px]  bg-black bg-opacity-20  h-[130px] hover:bg-opacity-40  text-center flex flex-col justify-center items-center  rounded-3xl`}
+                className={`service p-4 w-[320px]  bg-black bg-opacity-40  h-[130px] hover:bg-opacity-40  text-center flex flex-col justify-center items-center  rounded-3xl`}
               >
                 <p className="font-bold mb-1 flex gap-1">
                   {item.title} <History size={16} />
                 </p>
-                <p className=" text-xs font-medium">{item.value}</p>
+                <p className="text-xs md:text-sm font-medium">{item.value}</p>
               </div>
             );
           })}

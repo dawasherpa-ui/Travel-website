@@ -8,7 +8,7 @@ function AboutCard() {
     <div>
       <div className="column-1 sm:columns-2 md:columns-3 gap-3">
         {data.map((el: any, i: number) => (
-          <div className="border border-opacity-10 hover:border-opacity-20 rounded-xl w-full h-56 cursor-pointer mb-3 "
+          <div className="border border-opacity-10 hover:border-opacity-20 rounded-xl w-[60vw] mx-auto sm:w-full h-56 cursor-pointer mb-3 "
           key={i}>
             <div className="w-full h-full">
               <div className="relative group w-full h-full flex items-end">
@@ -23,7 +23,7 @@ function AboutCard() {
                     className="rounded-xl object-cover h-full w-full"
                   />
                 </div>
-                <div className="pl-4 h-full w-[60%] group-hover:bg-black group-hover:bg-opacity-30  -translate-x-3 rounded-xl group-hover:translate-x-0 opacity-0 pointer-events-none  group-hover:opacity-100 group-hover:pointer-events-auto duration-500 flex flex-col justify-center items-start ">
+                <div className="pl-4 pr-1 h-full w-full md:w-[90%] ld:w-[60%] group-hover:bg-black group-hover:bg-opacity-30  -translate-x-3 rounded-xl group-hover:translate-x-0 opacity-0 pointer-events-none  group-hover:opacity-100 group-hover:pointer-events-auto duration-500 flex flex-col justify-center items-start ">
                   <h2 className="text-xl font-semibold  text-white ">Namche Bazar</h2>
                   <p className="text-xs  text-white ">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit.

@@ -16,28 +16,38 @@ export default function CarouselItemCarousel({ title1, title2 }: any) {
   const categories = [
     {
       id: 1,
+      title:"Mt.Everest: Famous 8k Mountain",
+      desc:"One of the famous 8k Mountain.",
       image:
-        "/blog/1.jpg",
+        "/award/makalu.jpg",
     },
     {
       id: 1,
+      title:"Mt.K2: Famous 8k Mountain",
+      desc:"One of the famous 8k Mountain.",
       image:
-        "/blog/2.jpg",
+        "/award/manaslu.jpg",
     },
     {
       id: 1,
+      title:"Mt.Makalu: Famous 8k Mountain",
+      desc:"One of the famous 8k Mountain.",
       image:
-        "/blog/3.jpg",
+        "/award/nanga.jpg",
     },
     {
       id: 1,
+      title:"Mt.Kanchanjunga: Famous 8k Mountain",
+      desc:"One of the famous 8k Mountain.",
       image:
-        "/blog/Mountain.jpg",
+        "/award/choyu.jpg",
     },
     {
       id: 1,
+      title:"Mt.Choyu: Famous 8k Mountain",
+      desc:"One of the famous 8k Mountain.",
       image:
-        "/blog/sunlight.jpg",
+        "/award/Chogori.jpg",
     },
   ];
 
@@ -81,12 +91,12 @@ function SingleCategoryCard({ category }: any) {
       {category && (
         <a href="/expedition/2">
         <div className="border border-opacity-10 hover:border-opacity-20 rounded-xl w-full h-full cursor-pointer ">
-           <div 
-        style={{backgroundImage:"url('/blog/view.jpg')"}}
+           <div style={{backgroundImage:`url('${category.image}')`}}
+
         className=" bg-center bg-cover bg-no-repeat group relative col-span-1  md:block row-span-2 rounded-2xl h-full w-full text-primary-foreground">
           <div className="absolute w-full h-full grid place-items-center rounded-2xl bg-primary opacity-70 transition-opacity duration-500 group-hover:opacity-0">
-            <div className="">
-            Mt.Everest: 8K expedition
+            <div className="pl-3">
+            {category.title}
             </div>
           </div>
         </div>
