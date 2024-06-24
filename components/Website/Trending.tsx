@@ -93,7 +93,7 @@ export default function OurServices() {
           className=" bg-center bg-cover bg-no-repeat group relative col-span-1 hidden md:block row-span-2 rounded-2xl h-full w-full text-primary-foreground"
         ></div>
         <div
-          style={{ backgroundImage: "url('/blog/peakView.jpg')" }}
+          style={{ backgroundImage: "url('/blog/climb1.jpg')" }}
           className=" bg-center bg-cover bg-no-repeat group relative col-span-1 row-span-2 hidden md:block rounded-2xl h-full w-full text-primary-foreground"
         >
           <div className="absolute w-full h-full grid place-items-center rounded-2xl bg-primary opacity-70 transition-opacity duration-500 group-hover:opacity-0">
