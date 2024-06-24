@@ -89,11 +89,11 @@ export default function OurServices() {
         </div>
 
         <div
-          style={{ backgroundImage: "url('/blog/climbing.jpg')" }}
+          style={{ backgroundImage: "url('/blog/Climbing.jpg')" }}
           className=" bg-center bg-cover bg-no-repeat group relative col-span-1 hidden md:block row-span-2 rounded-2xl h-full w-full text-primary-foreground"
         ></div>
         <div
-          style={{ backgroundImage: "url('/blog/climb1.jpg')" }}
+          style={{ backgroundImage: "url('/blog/peakView.jpg')" }}
           className=" bg-center bg-cover bg-no-repeat group relative col-span-1 row-span-2 hidden md:block rounded-2xl h-full w-full text-primary-foreground"
         >
           <div className="absolute w-full h-full grid place-items-center rounded-2xl bg-primary opacity-70 transition-opacity duration-500 group-hover:opacity-0">
